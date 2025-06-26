@@ -1,5 +1,3 @@
-Readme
-
 Project’s Title
 356 Custom Restoring Frontend Project 
 
