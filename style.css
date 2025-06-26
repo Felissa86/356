@@ -1,0 +1,417 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: black;
+
+  /* The overflow-x does not work because the menu is has 
+  position absolute and the parent does not has position relative*/
+  overflow-x: hidden;
+}
+
+.wrapper {
+  background-image: url("/porsche_background356_7.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 8rem;
+  padding-right: 15rem;
+  background-color: #f5f5f6;
+  height: 8rem;
+  position: relative;
+  max-width: 100%;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10rem;
+  /* padding-top: 6rem; */
+  padding-right: 2rem;
+}
+
+.logo {
+  height: 6rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #b0d0ff;
+}
+
+/* Mobile nav hamburger menu */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: black;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.section-hero {
+  background-color: transparent;
+
+  padding: 10rem 5rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 4rem;
+
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.hero {
+  max-width: 130rem;
+  /* margin: 0 auto; */
+  margin-left: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.5%;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.hero-description {
+  width: 100%;
+  font-size: 3rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  width: 60rem;
+}
+
+.hero-img-box {
+  margin-top: 10rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-icons {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.icons {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+.icons-2 {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+.icon-text {
+  align-items: center;
+  font-size: 2rem;
+}
+
+.symbol {
+  height: 5rem;
+  width: 5rem;
+}
+
+/* .second-paragraph {
+  display: grid;
+  margin-left: 4rem;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  padding-left: 2rem;
+} */
+
+.section-bemiddeling {
+  position: relative;
+
+  /* make the section tall enough to show the photo */
+  height: 100vh; /*fills a whole screen*/
+  padding: 10rem 5rem; /*keep the spacing you already had*/
+  max-width: 100%;
+}
+
+.section-bemiddeling::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  background-image: url("/porsche_background356_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.section-galerij {
+  position: relative;
+
+  /* make the section tall enough to show the photo */
+  height: 100vh; /*fills a whole screen*/
+  padding: 10rem 5rem; /*keep the spacing you already had*/
+  max-width: 100%;
+}
+
+.section-galerij::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  background-image: url("/porsche_background356_a.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.gallery-text-box {
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
+  div.gallery:hover {
+    border: 3px solid black;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+.gallery-description {
+  color: black;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  padding-left: 2rem;
+}
+
+.bemiddeling-box {
+  max-width: 130rem;
+  /* margin: 0 auto; */
+  margin-left: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0rem;
+  align-items: stretch;
+}
+
+.bemiddeling-text-box {
+  display: flex;
+  align-items: center; /* vertically center the content */
+  padding: 2rem;
+}
+
+.bemiddeling-primary {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  padding-left: 4rem;
+}
+
+.bemiddeling-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  padding-left: 2rem;
+}
+
+.section-contact {
+  color: rgb(247, 228, 188);
+  background-image: url("/porsche_background356_c.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* make the section tall enough to show the photo */
+  height: 100vh; /*fills a whole screen*/
+  padding: 10rem 5rem; /*keep the spacing you already had*/
+  max-width: 100%;
+}
+
+.section-diensten {
+  /* columns: 3; */
+  position: relative;
+
+  /* make the section tall enough to show the photo*/
+  height: 100vh;
+  padding: 10rem 5rem; /*keep the spacing you already had*/
+  max-width: 100%;
+  z-index: 1;
+}
+
+.section-diensten::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  background-image: url("/porsche_background356_z.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.diensten-primary {
+  color: black;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  padding-left: 4rem;
+}
+
+.diensten-text-box {
+  display: flex;
+  column-count: 3;
+  color: black;
+  font-size: 2rem;
+  line-height: 1.6;
+  /* margin-bottom: 4.8rem; */
+  padding-left: 4rem;
+}
+
+.diensten-description {
+  padding-left: 1rem;
+}
+
+.diensten-description-sub {
+  padding-left: 1rem;
+}
+
+.diensten-description-sub-sub {
+  padding-left: 1rem;
+}
+
+.contact-text-box {
+  opacity: 0.8;
+  width: 90%;
+  margin-left: 4rem;
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: #aa8304;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: black;
+  }
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: black;
+}
+
+.footer {
+  padding: 1rem;
+  font-size: 1.7rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: white; */
+  color: white;
+  text-align: center;
+}
