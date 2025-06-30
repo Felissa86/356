@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="356 custom restoring redesigned website, a student project from Felissa Marlisa-Becks"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="356.jpg"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,18 +31,18 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
-    <script defer src="js/script.js"></script>
+    
 
     <script defer src="omnifood_script.js"></script>
 
-    <title>356 Custom Restoring</title>
+    <title>356 Custom Restoring &mdash; website from Felissa</title>
   </head>
 
   <body>
    
   <div class="wrapper">
     <header class="header">
-      <a href="index.html">
+      <a href="#">
         <img class="logo" alt="356 custom restoring logo" src="/logo_CR_NB_png.png"/>
       </a>
 
@@ -63,7 +68,7 @@
             "Uw Klassieke Porsche, Onze Expertise"
           </h1>
           <p class="hero-description">
-            Specialist in klassieke Porsche 356 en vroege 911.</p>
+            Specialist in klassieke Porsche 356 <br>en vroege 911.</p>
           
             <div class="hero-icons">
               <div class="icons">
@@ -148,7 +153,7 @@ Benieuwd naar welke klassiekers wij momenteel in verkoop hebben? Met enige regel
           <h4>Restauraties & Herstel</h4>
           <p>Uw klassieke Porsche weer in oude glorie herstellen? 
             Bij ons kunt terecht voor zowel volledige alsook gedeeltelijke restauraties, evenals herstel van b.v. de carrosserie, electra en interieur, etc.
-          </p>
+          </p><br>
         </div>
 
         <div class="diensten-description-sub">
@@ -156,7 +161,7 @@ Benieuwd naar welke klassiekers wij momenteel in verkoop hebben? Met enige regel
           <p>Om uw klassieker in topconditie te houden, is het belangrijk om regelmatig onderhoud aan uw auto te laten uitvoeren. 
         Ook hiervoor kunt u bij ons terecht, ook wanneer uw auto een revisie nodig heeft. 
         Met onze ruime ervaring streven wij erna dat u weer met een gerust hart de weg op kunt en u optimaal van uw Porsche kunt genieten. 
-          </p>
+          </p><br>
         </div>
 
         <div class="diensten-description-sub-sub">
@@ -175,15 +180,18 @@ Benieuwd naar welke klassiekers wij momenteel in verkoop hebben? Met enige regel
         <h2 class="bemiddeling-primary">Contact</h2>
       <div class="contact-text-box">
           <div class="container">
-            <form action="/action_page.php">
-              <label for="fname">Voornaam</label>
-              <input type="text" id="fname" name="firstname" placeholder="Jouw voornaam hier...">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              
+              <input type="hidden" name="access_key" value="52bbe5cd-2b33-4d41-aa5c-0a56b2adb9d3">
 
-              <label for="lname">Achternaam</label>
-              <input type="text" id="lname" name="lastname" placeholder="Jouw achternaam hier...">
+              <label for="fname">Naam</label>
+              <input type="text" name="name" placeholder="Jouw voor en achternaam hier..." class="contact-inputs" required>
 
-              <label for="subject">Onderwerp</label>
-              <textarea id="subject" name="subject" placeholder="Schrijf hier uw bericht..." style="height:175px"></textarea>
+              <label for="mail">E-mail</label>
+              <input type="text" name="email" placeholder="Jouw e-mail hier..." class="contact-inputs" required>
+
+              <label for="fname">Bericht</label>
+              <textarea name="message" placeholder="Jouw bericht hier..." class="contact-inputs"></textarea>
 
               <input type="submit" value="Submit">
             </form>
